@@ -1,0 +1,354 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1f2937;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 30px;
+        }
+
+        .home-content h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .home-content p {
+            font-size: 19px;
+            max-width: 650px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: white;
+            color: #2563eb;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #e5e7eb;
+        }
+
+        /* Common Section */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #1f2937;
+        }
+
+        /* About */
+        .about-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .about-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 45%;
+            min-width: 280px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-card h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            line-height: 1.7;
+        }
+
+        .skills {
+            margin-top: 15px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        /* Projects */
+        #projects {
+            background: #eaf0f8;
+        }
+
+        .project-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: white;
+            width: 30%;
+            min-width: 260px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            line-height: 1.6;
+        }
+
+        /* Contact */
+        .contact-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-box p {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .contact-box a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .home-content h1 {
+                font-size: 38px;
+            }
+
+            .home-content h2 {
+                font-size: 22px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .about-card,
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home-content">
+            <h1>John Doe</h1>
+            <h2>College Student & Aspiring Software Developer</h2>
+            <p>
+                Hello! I am a college student passionate about technology,
+                programming, and building useful applications. Welcome to my
+                personal portfolio website.
+            </p>
+
+            <a href="#about" class="button">Explore My Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-card">
+                <h3>Education</h3>
+                <p>
+                    <strong>Bachelor of Computer Science</strong><br>
+                    ABC College of Technology<br>
+                    2023 - 2027
+                </p>
+
+                <br>
+
+                <p>
+                    Currently learning software development,
+                    cloud computing, DevOps, and modern web technologies.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Skills</h3>
+
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Kubernetes</span>
+                    <span class="skill">AWS</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Student Management System</h3>
+                <p>
+                    A web-based application designed to manage student
+                    information, attendance, and academic records.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive portfolio website created using HTML and CSS
+                    to showcase my education, skills, and projects.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Cloud Deployment Project</h3>
+                <p>
+                    Deployed a web application using Docker and Kubernetes
+                    on an AWS EC2 server.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-box">
+            <p>
+                📧 Email:
+                <a href="mailto:student@example.com">
+                    student@example.com
+                </a>
+            </p>
+
+            <p>
+                📱 Phone:
+                <a href="tel:+919876543210">
+                    +91 98765 43210
+                </a>
+            </p>
+
+            <p>
+                Feel free to contact me for opportunities,
+                projects, or collaboration.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 John Doe | Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
+```
